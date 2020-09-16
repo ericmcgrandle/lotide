@@ -13,7 +13,7 @@ const eqArrays = function(arrOne, arrTwo) {
   }
 };
 
-const AssertEqualArrays = function(arrOne, arrTwo) {
+const assertEqualArrays = function(arrOne, arrTwo) {
 
   if (eqArrays(arrOne, arrTwo)) {
     console.log(`${"✅"}: ${arrOne} === ${arrTwo}`);
@@ -23,11 +23,11 @@ const AssertEqualArrays = function(arrOne, arrTwo) {
 };
 
 //Test Code
-AssertEqualArrays([1, 2, 3], [1, 2, 3]); // => should PASS
-AssertEqualArrays([1, 2, 3], [3, 2, 1]); // => should FAIL
-AssertEqualArrays([1, 2, 3], ['1', 2, 3]); // => should FAIL
-AssertEqualArrays(['1', 2, 3], [1, 2, 3]); // => should FAIL
-AssertEqualArrays([1, 2, 3, 4], [1, 2, 3]); // => should FAIL
+assertEqualArrays([1, 2, 3], [1, 2, 3]); // => should PASS
+assertEqualArrays([1, 2, 3], [3, 2, 1]); // => should FAIL
+assertEqualArrays([1, 2, 3], ['1', 2, 3]); // => should FAIL
+assertEqualArrays(['1', 2, 3], [1, 2, 3]); // => should FAIL
+assertEqualArrays([1, 2, 3, 4], [1, 2, 3]); // => should FAIL
 
 
 //Could 'imrpove' by providing more detailed return statements
