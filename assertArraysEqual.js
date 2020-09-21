@@ -1,17 +1,4 @@
-const eqArrays = function(arrOne, arrTwo) {
-
-  //Check length
-  if (arrOne.length !== arrTwo.length) {
-    return false;
-  }
-  //Check array for equality
-  for (let i = 0; i < arrOne.length; i++) {
-    if (arrOne[i] !== arrTwo[i]) {
-      return false;
-    }
-    return true;
-  }
-};
+const eqArrays = require('./eqArrays');
 
 const assertEqualArrays = function(arrOne, arrTwo) {
 
@@ -22,16 +9,5 @@ const assertEqualArrays = function(arrOne, arrTwo) {
   }
 };
 
-//Test Code
-assertEqualArrays([1, 2, 3], [1, 2, 3]); // => should PASS
-assertEqualArrays([1, 2, 3], [3, 2, 1]); // => should FAIL
-assertEqualArrays([1, 2, 3], ['1', 2, 3]); // => should FAIL
-assertEqualArrays(['1', 2, 3], [1, 2, 3]); // => should FAIL
-assertEqualArrays([1, 2, 3, 4], [1, 2, 3]); // => should FAIL
 
-
-//Could 'imrpove' by providing more detailed return statements
-//Each return value would be associated with the reason it failed
-//IE: return value 0 = passed
-//return value -1 = failed for length being different
-//return value -2 = failed for type difference
+module.exports = assertEqualArrays;
