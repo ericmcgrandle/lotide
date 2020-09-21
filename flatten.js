@@ -32,15 +32,12 @@ const flattenRec = function(array){
   }
 };
 
-
-//Test code
-
-console.log(flatten([[1, 2, 3], ['c'], 5]));
-console.log(flatten([[1, 2, 3], ['a', 'b', 'c'], 5, 7, ['a', 'd']]));
-
-//recursively
-flattenRec([[1, 2, 3, [1, 2, ['f', ['4']]]], ['a', 'b', 'c'], 5]);
 console.log(flattenedRec);
+
+
+module.exports = [flatten, flattenRec];
+
+
 
 
 

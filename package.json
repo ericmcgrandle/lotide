@@ -1,8 +1,8 @@
 {
-  "name": "lotide",
+  "name": "@ericmcgrandle/lotide",
   "version": "1.0.0",
-  "description": "",
-  "main": "assertArraysEqual.js",
+  "description": "Mini clone of lodash",
+  "main": "README.MD",
   "directories": {
     "test": "test"
   },
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/ericmcgrandle/lotide.git"
   },
-  "author": "",
+  "author": "ericmcgrandle",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ericmcgrandle/lotide/issues"

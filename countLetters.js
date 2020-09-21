@@ -16,17 +16,4 @@ const countLetters = function(str){
 };
 
 
-const assertEqual = function(actual, expected) {
-
-  if (actual === expected) {
-    console.log(`${"✅"}: ${actual} === ${expected}`);
-  } else {
-    console.log(`${"❌"}: ${actual} !== ${expected}`);
-  }
-};
-
-
-console.log(countLetters("lighthouse in the house"));
-console.log(countLetters("aabbccdd123"));
-console.log(countLetters(""));
-console.log(countLetters("-1,.^%he"));
+module.exports = countLetters;

@@ -1,6 +1,5 @@
 const { assert } = require('chai');
-const assertEqual = require('../assertEqual');
-const head = require('../head');
+const head = require('../index').head;
 
 describe("#head", () => {
 
